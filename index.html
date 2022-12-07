@@ -217,7 +217,7 @@
                               <p class="header__content-text">Доставка отчета по городу или в банк</p>
                            </li>
                         </ul>
-                        <button class="header__content-btn">
+                        <button class="header__content-btn" data-popup="#application">
                            Заказать оценку
                         </button>
                      </div>
@@ -422,92 +422,192 @@
                <div class="evaluation__wrapper">
                   <div class="container">
                      <div class="evaluation__inner">
-                        <div class="banks__block">
-                           <div class="evaluation__sub-title-box">
-                              <p class="evaluation__sub-title">
-                                 <span class="evaluation__sub-title-num">01.</span>
-                                 Выберите банк:
-                              </p>
-                           </div>
-                           <div class="banks__block-inner">
-                              <div class="banks__block-items">
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/sber-1.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/vtb-2.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/gazprom-3.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/ros-4.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/prom-5.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/ural-6.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/spb-7.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/lfa-8.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/aif-9.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/ros-10.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/absolut-11.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/otkr-12.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/ak-bars-13.png" alt="">
-                                    </div>
-                                 </a>
-                                 <a class="banks__block-item" href="#">
-                                    <div class="banks__block-item-inner">
-                                       <img class="banks__block-img" src="images/banks-logo/other-14.png" alt="">
-                                    </div>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
                         <div class="form__block">
                            <div class="form__block-inner">
                               <form class="evaluation__form" action="#">
                                  <div class="evaluation__form-inner">
+                                    <!-- ========================================= -->
+                                    <div class="banks__block">
+                                       <div class="evaluation__sub-title-box evaluation__sub-title-box-one">
+                                          <p class="evaluation__sub-title">
+                                             <span class="evaluation__sub-title-num">01.</span>
+                                             Выберите банк:
+                                          </p>
+                                       </div>
+                                       <div class="banks__block-inner">
+                                          <div class="banks__block-items">
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1" checked>
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/sber-1.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img" src="images/banks-logo/vtb-2.png"
+                                                            alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/gazprom-3.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img" src="images/banks-logo/ros-4.png"
+                                                            alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/prom-5.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/ural-6.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img" src="images/banks-logo/spb-7.png"
+                                                            alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img" src="images/banks-logo/lfa-8.png"
+                                                            alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/raif-9-1.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/ros-10.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/absolut-11.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/otkr-12.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/ak-bars-13.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                             <div class="banks__block-item">
+                                                <div class="banks__block-item-inner">
+                                                   <label class="select__label">
+                                                      <input class="select__input" type="radio" value="bank-1"
+                                                         name="bank-1">
+                                                      <span class="out__select-input">
+                                                         <img class="banks__block-img"
+                                                            src="images/banks-logo/other-14.png" alt="">
+                                                      </span>
+                                                   </label>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- ========================================= -->
                                     <div class="evaluation__info-block">
                                        <div class="evaluation__sub-title-box">
                                           <p class="evaluation__sub-title">
@@ -593,7 +693,7 @@
                                              Нажимая на кнопку “Заказать оценку”, вы даете
                                              согласие на обработку своих персональных данных
                                           </p>
-                                          <button type="submit" class="evaluation__order-btn">
+                                          <button type="submit" class="evaluation__order-btn" data-popup="#application">
                                              Заказать оценку
                                           </button>
                                        </div>
@@ -736,6 +836,7 @@
          <section class="questions">
             <div class="container-big">
                <div class="container">
+                  <h6 class="section-questions--title">Вопросы</h6>
                   <div class="questions__inner">
                      <img class="questions__img-bg" src="images/questions-bg.png" alt="">
                      <div class="questions__form-block">
@@ -853,11 +954,8 @@
                      <h2 class="section__title">Что такое оценка?</h2>
                   </div>
                </div>
-
                <div class="what-evaluation__inner">
-
                   <div class="what-evaluation__content">
-
                      <div class="show__evaluation-box">
                         <div class="what-evaluation__content-text">
                            <p class="what-evaluation__sub-text sub-text__one">
@@ -868,7 +966,6 @@
                            </p>
                            Оценку проводят, чтобы <span class="show-more__dots">...</span>
                            <div class="show-block__evaluation">
-                              <!-- <span class="what-evaluation__content-text--more"> -->
                               определить стоимость конкретного объекта. Ее осуществляют в двух
                               ситуациях:
                               <p class="what-evaluation__sub-text  sub-text__two">
@@ -885,28 +982,137 @@
                                  аналогичное
                                  имущество, степень износа объекта, размеры, площадь, местоположение.
                               </p>
-                              <!-- </span> -->
                            </div>
                         </div>
                         <button class="show-more__btn-evaluation">чиать далее</button>
                      </div>
-
                   </div>
-
-
-
-
-
-
-
                </div>
-
-
             </div>
-
-
          </section>
 
+         <section class="contacts">
+            <div class="container-big">
+               <div class="container">
+                  <div class="section__title-box contacts__title-box ">
+                     <h2 class="section__title">Контакты</h2>
+                  </div>
+               </div>
+               <div class="contacts__inner">
+                  <div class="contacts__block">
+                     <div class="contacts__block-body">
+                        <div class="phone__box">
+                           <a class="phone" href="tel:+78124051040">+7 (812) 405-10-40</a>
+                           <p class="time">
+                              с 09:00 до 18:00 (по московскому времени)
+                           </p>
+                        </div>
+                        <div class="address__box">
+                           <p class="city">
+                              г. Санкт-Петербург
+                           </p>
+                           <p class="street">
+                              ул. Торжковская дом 2, корпус 1
+                           </p>
+                        </div>
+                        <div class="mail__box">
+                           <a class="mail" href="mailto:info@ocenka-cct.ru">info@ocenka-cct.ru</a>
+                        </div>
+                        <div class="social__box">
+                           <p class="question__messenger">
+                              Задайте вопрос в мессенджерах:
+                           </p>
+                           <div class="contacts__social-block">
+                              <a class="contacts__social-link" href="#">
+                                 <img class="contacts-social__img" src="images/icons/social-telegram.png"
+                                    alt="telegram">
+                              </a>
+                              <a class="contacts__social-link" href="#">
+                                 <img class="contacts-social__img" src="images/icons/social-whatsapp.png"
+                                    alt="whatsapp">
+                              </a>
+                           </div>
+                        </div>
+                        <button class="contacts__btn" data-popup="#application">
+                           Заказать оценку
+                        </button>
+                     </div>
+                  </div>
+                  <div class="maps__block">
+                     <div id="map-ocenka" class="contacts-map"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="popular">
+            <div class="container-big">
+               <div class="container">
+                  <div class="section__title-box popular__title-box ">
+                     <h2 class="section__title">Популярные услуги</h2>
+                  </div>
+               </div>
+               <div class="popular__inner">
+                  <ul class="popular__items">
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка квартир
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           приемка квартир
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для сбербанка
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для втб
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для альфа банка
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для ак барса
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для модуля
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для росбанка
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для уралсиба
+                        </a>
+                     </li>
+                     <li class="popular__item">
+                        <a class="popular__item-link" href="#">
+                           оценка для открытия
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
 
 
          <!-- <button data-popup="#massageName">Я открываю попап 2</button> -->
@@ -933,23 +1139,79 @@
 
 
       <footer class="footer">
-         <div class="container">
+         <div class="container-big">
+            <div class="container">
+               <div class="footer__inner">
+                  <div class="footer__body">
+                     <a class="footer__logo" href="#">
+                        <img class="footer__logo-img" src="images/logo-footer.svg" alt="логотип">
+                     </a>
+                     <nav class="footer__menu">
+                        <ul class="footer-menu__list">
+                           <li class="footer-menu__list-item">
+                              <a class="footer-menu__list-link" href="#">О компании</a>
+                           </li>
+                           <li class="footer-menu__list-item">
+                              <a class="footer-menu__list-link" href="#">Акции</a>
+                           </li>
+                           <li class="footer-menu__list-item">
+                              <a class="footer-menu__list-link" href="#">Новости</a>
+                           </li>
+                           <li class="footer-menu__list-item">
+                              <a class="footer-menu__list-link" href="#">Контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <p class="copy">
+                        © 2022 Все права защищены. Информация, на сайте носит информационный характер и ни при каких
+                        условиях не является публичной офертой.
+                     </p>
+                  </div>
+               </div>
 
-            я футер
+            </div>
          </div>
       </footer>
 
-      <div class="hystmodal" id="massageName" aria-hidden="true">
+      <div class="hystmodal" id="application" aria-hidden="true">
          <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
-               <button data-hystclose class="hystmodal__close">Закрыть</button>
-               <div class="popup__body">
-                  Сообщение 2
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eveniet sequi, ut reiciendis cum
+               <button data-hystclose class="hystmodal__close application-popup__close">Закрыть</button>
+               <div class="application-popup__body">
+                  <div class="application-popup__body-inner">
+                     <div class="application-popup__form-block">
+                        <form class="application-popup__form" action="#">
+                           <div class="application-popup__form-body">
+                              <p class="application-popup__form-title">
+                                 Перезвоним
+                              </p>
+                              <p class="application-popup__form-message">
+                                 Оставьте контакты, и наш специалист свяжется с Вами через 40 секунд!
+                              </p>
+                              <div class="application-popup__input-box">
+                                 <input class="application-popup__input" type="text" placeholder="Введите ваше имя"
+                                    name="application-name">
+                              </div>
+                              <div class="application-popup__input-box">
+                                 <input class="application-popup__input" type="tel" placeholder="Ваш номер телефона"
+                                    name="application-phone">
+                              </div>
+                              <button type="submit" class="application-popup__btn">
+                                 отправить
+                              </button>
+                              <p class="application-popup__description">
+                                 Нажимая на кнопку “Заказать оценку”, вы даете
+                                 согласие на обработку своих персональных данных
+                              </p>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
+
    </div>
 
 
@@ -964,6 +1226,7 @@
    <script src="js/hystmodal.min.js"></script>
    <script src="js/choices.min.js"></script>
    <script src="js/inputmask.min.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
    <script src="js/main.min.js"></script>
 </body>
 
