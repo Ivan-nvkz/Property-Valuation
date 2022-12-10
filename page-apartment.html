@@ -6,6 +6,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Оценка квартир </title>
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+   <link rel="manifest" href="images/favicons/site.webmanifest">
+   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#2d89ef">
+   <meta name="theme-color" content="#248fff">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -245,9 +252,6 @@
                            <div class="form__block-inner">
                               <form class="evaluation__form" action="#">
                                  <div class="evaluation__form-inner">
-                                    <!-- ========================================= -->
-
-                                    <!-- ========================================= -->
                                     <div class="evaluation__info-block">
                                        <div class="evaluation__sub-title-box">
                                           <p class="evaluation__sub-title">
@@ -258,19 +262,16 @@
                                        <div class="evaluation__info-body">
                                           <div class="evaluation__info-type">
                                              <p class="evaluation__info-title">Тип квартиры</p>
-                                             <select class="multi-default type__select">
-                                                <option class="type__option" value="">
-                                                   Выберите тип квартиры
-                                                </option>
-                                                <option class="type__option" value="секция">
-                                                   секция
-                                                </option>
-                                                <option class="type__option" value="коммунальная">
-                                                   коммунальная
-                                                </option>
-                                                <option class="type__option" value="коммунальная">
-                                                   1-комнатная
-                                                </option>
+                                             <select class="form-control-1" name="choices-multiple-remove-button"
+                                                id="choices-multiple-remove-button-1" multiple>
+                                                <option value="Choice 1">1-комнатная</option>
+                                                <option value="Choice 2">2-х комнатная</option>
+                                                <option value="Choice 3">3-х комнатная</option>
+                                                <option value="Choice 4">4-х комнатная</option>
+                                                <option value="Choice 5">5-комнатная</option>
+                                                <option value="Choice 6">6-комнатная</option>
+                                                <option value="Choice 7">7-комнатная</option>
+                                                <option value="Choice 8" disabled>8-комнатная</option>
                                              </select>
                                           </div>
                                           <div class="evaluation__info-area">
@@ -283,19 +284,19 @@
                                              <p class="evaluation__info-title">
                                                 Выберите необходимые услуги
                                              </p>
-                                             <select class="multi-default type__select">
-                                                <option class="services__option" value="">
+                                             <select class="form-control-2" name="choices-multiple-remove-button"
+                                                id="choices-multiple-remove-button-2" multiple>
+                                                <option class="services__option" value="0">
                                                    Оценка для банка
                                                 </option>
-                                                <option class="services__option" value="Услуга 1">
-                                                   Услуга 1
-                                                </option>
-                                                <option class="services__option" value="Услуга 2">
-                                                   Услуга 2
-                                                </option>
-                                                <option class="services__option" value="Услуга 3">
-                                                   Услуга 3
-                                                </option>
+                                                <option value="Услуга 1">Услуга-1</option>
+                                                <option value="Услуга 2">Услуга-2</option>
+                                                <option value="Услуга 3">Услуга-3</option>
+                                                <option value="Услуга 4">Услуга-4</option>
+                                                <option value="Услуга 5">Услуга-5</option>
+                                                <option value="Услуга 6">Услуга-6</option>
+                                                <option value="Услуга 7">Услуга-7</option>
+                                                <option value="Услуга 8" disabled>Услуга-8</option>
                                              </select>
                                           </div>
                                        </div>
@@ -1036,7 +1037,7 @@
    <script src="js/hystmodal.min.js"></script>
    <script src="js/choices.min.js"></script>
    <script src="js/inputmask.min.js"></script>
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
    <script src="js/main.min.js"></script>
 </body>
 
